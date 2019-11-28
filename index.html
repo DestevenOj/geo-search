@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>city weather</title>
     <link rel="stylesheet" href="style.css">
-    
+    <title>city weather</title>
 
     <!-- call for jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   </head>
   <body>
 
@@ -17,7 +17,7 @@
         <h1>City weather</h1>
         <h6>Search city to see weather 😊</h6>
       <input id="city-name" type="text" placeholder="Enter City"> <br>
-      <button id="search-city" >Search</button>
+      <button id="search-city" type="submit">Search</button>
     </div>
     <div id="cityData"></div>
 
@@ -26,12 +26,17 @@
       <canvas class="icon" width="128" height="128"></canvas>
   </div>
   <div class="temperature-section">
+      <label for="temperature"><em>Click to see in °F or °C </em></label>
       <div class="degree-section">
           <h2 class="temperature-degree">0</h2>
           <span>°F</span>
       </div>
       <div class="temperature-description">Will you bear it 🤞</div>
   </div>
+  <div id="map"> </div>
     <script src="app.js"></script>
+     <!-- fetch google map after html page -->
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5OBQoffI187G4XX_IeCJBUGmt33d6yV0&callback=initMap">
+     </script>
   </body>
 </html>
