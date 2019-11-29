@@ -27,17 +27,26 @@ h1 {
     margin-top: 30px;
     margin-bottom: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     margin-left: 30px;
 >>>>>>> develop
+=======
+    margin-left: 30px;
+
+>>>>>>> beabf5d6bffa581d7ec71382e94c183c2177f928
 }
 
 h6 {
     margin-bottom: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     margin-left: 30px;
 >>>>>>> develop
+=======
+    margin-left: 30px;
+>>>>>>> beabf5d6bffa581d7ec71382e94c183c2177f928
 }
 .location,
 .temperature-section {
@@ -69,23 +78,30 @@ h6 {
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
 <<<<<<< HEAD
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 20px;
 =======
+=======
+>>>>>>> beabf5d6bffa581d7ec71382e94c183c2177f928
     max-width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 10px;
     border-radius: 5px;
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+>>>>>>> beabf5d6bffa581d7ec71382e94c183c2177f928
     
    }
    #search-city {
        margin-top: 10px;
        width: 100px;
+<<<<<<< HEAD
 <<<<<<< HEAD
        height: 50px;
    }
@@ -94,6 +110,8 @@ h6 {
        height: 50px;
    }
 =======
+=======
+>>>>>>> beabf5d6bffa581d7ec71382e94c183c2177f928
        height: 40px;
        font-size: large;
        background-color: #FFDEAD;
@@ -122,4 +140,8 @@ h6 {
 aside > p {
     margin: .5rem;
 }
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+
+>>>>>>> beabf5d6bffa581d7ec71382e94c183c2177f928
