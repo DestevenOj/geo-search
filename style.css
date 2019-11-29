@@ -59,4 +59,10 @@ h6 {
    }
    #search-city {
        margin-top: 10px;
+       width: 100px;
+       height: 50px;
+   }
+   #city-name {
+       width: 200px;
+       height: 50px;
    }
