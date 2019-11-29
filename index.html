@@ -13,27 +13,39 @@
   </head>
   <body>
 
-    <div>
-        <h1>City weather</h1>
-        <h6>Search city to see weather 😊</h6>
-      <input id="city-name" type="text" placeholder="Enter City"> 
-      <button id="search-city" type="submit">Search</button>
-    </div>
-    <div id="cityData"></div>
-
-    <div class="location">
-      <h1 class="location-timezone">Timezone</h1>
-      <canvas class="icon" width="128" height="128"></canvas>
-  </div>
-  <div class="temperature-section">
-      <label for="temperature"><em>Click to see in °F or °C </em></label>
-      <div class="degree-section">
-          <h2 class="temperature-degree">0</h2>
-          <span>°F</span>
+      <div class="firstMain-content">
+          <h1>City weather</h1>
+          <input id="city-name" type="text" placeholder="Enter City"> 
+          <button id="search-city" type="submit">Search</button> </input><br>
+          <h6>Search city to see weather 😊</h6>
       </div>
-      <div class="temperature-description">Will you bear it 🤞</div>
-  </div>
+    <div class="main-content">
+      
+    <div id="cityData"></div>
+    <div class="display-data">
+        <div class="location">
+          <h1 class="location-timezone">Timezone</h1>
+          <canvas class="icon" width="128" height="128"></canvas>
+      </div>
+      <div class="temperature-section">
+          <label for="temperature"><strong>Click: 👀 °F/°C </strong></label>
+          <div class="degree-section">
+              <h2 class="temperature-degree">0</h2>
+              <span>°F</span>
+          </div>
+          <div class="temperature-description"></div>
+      </div>
+    </div>
   <div id="map"> </div>
+    <aside class="aside-name">
+      <h3>More about</h3>
+      <p>Geo-Search is a tool that allows people to search for places</p>
+      <label>Humidity: <strong><span id="humidity"></span></strong></label><br>
+      <label>Pressure: <strong><span id="pressure"></span></strong></label><br>
+      <label>Wind speed: <strong><span id="wind-speed"></span></strong></label>
+    </aside>
+  </div>
+  <!-- <div id="map"> </div> -->
     <script src="app.js"></script>
      <!-- fetch google map after html page -->
      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5OBQoffI187G4XX_IeCJBUGmt33d6yV0&callback=initMap">
