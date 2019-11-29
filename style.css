@@ -50,6 +50,15 @@ h6 {
     margin-bottom: 5px;
     margin-left: 30px;
 }
+@media screen and (max-width: 400px) {
+    h6 {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    float: none;
+  }
+}
 .location,
 .temperature-section {
     height: 30vh;
@@ -101,6 +110,15 @@ h6 {
        padding: 10px;
        background-color: #FFDEAD;
    }
+   @media screen and (max-width: 400px) {
+    #city-name {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    float: none;
+  }
+}
 
     aside {
     width: 40%;
