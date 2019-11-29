@@ -15,6 +15,14 @@ body {
      color: white;
 }
 
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h6 {
+    margin-bottom: 5px;
+}
 .location,
 .temperature-section {
     height: 30vh;
@@ -43,8 +51,21 @@ body {
  #map {
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
     
    }
-   button {
-       width: max-content;
+   #search-city {
+       margin-top: 10px;
+       width: 100px;
+       height: 40px;
+       font-size: large;
+   }
+   #city-name {
+       width: 200px;
+       height: 40px;
+       font-size: large;
+       margin: auto;
    }
