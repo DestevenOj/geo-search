@@ -2,6 +2,9 @@ let temperatureDescription = document.querySelector('.temperature-description');
 let temperatureDegree = document.querySelector('.temperature-degree');
 let locationTimezone = document.querySelector('.location-timezone');
 let temperatureSection = document.querySelector('.temperature-section');
+let locationHumidity = document.getElementById('humidity');
+let locationWindSpeed = document.getElementById('wind-speed');
+let locationPressure = document.getElementById('pressure');
 const temperatureSpan = document.querySelector('.temperature-section span');
 
 let cityName = document.getElementById('city-name');
@@ -31,8 +34,19 @@ cityName.addEventListener('input', function updateValue(e) {
                 
                   //   create variables to store data from api objects
                   const {temp, pressure, humidity} = data.main;
+                  const {speed} = data.wind;
                   const {description, icon} = data.weather[0];
                   const {lat, lon} = data.coord;
+
+                
+                  let newHumidity = humidity;
+                  let newPressure = pressure;
+                  let newWindSpeed = speed;
+
+                  locationHumidity.textContent = newHumidity + " RH";
+                  locationPressure.textContent = newPressure + " P";
+                  locationWindSpeed.textContent = newWindSpeed + " knots";
+
 
                   // create variables to store values for lat and long
                   let townLatitude = lat;
@@ -50,6 +64,7 @@ cityName.addEventListener('input', function updateValue(e) {
                   // The marker, positioned at myTown
                   let marker = new google.maps.Marker({position: myTown, map: map})
                   
+                            
 
                   const temperatureFahrenheit = temp;
         
