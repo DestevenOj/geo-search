@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
 }
 
 
@@ -9,59 +8,44 @@
     * {
       width: 100%;
       height: auto;
-      position: relative;
     }
   }
   @media screen and (max-width: 400px) {
     * {
     text-align: center;
-    width: 100%;
-    float: none;
   }
 }
 
-
-
-.firstMain-content {
-    font-family: sans-serif;
-    color: white;
-    background: rgb(47,150,163);
-}
 .main-content {
-     height: 100vh;
      display: flex;
      justify-content: center;
-     flex-direction: row;
-     /* align-items: center; */
+     flex-direction: column;
      box-sizing: border-box; 
      background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
      font-family: sans-serif;
      color: white;
 }
 
+.returned-data{
+    display: flex;
+    flex-direction: row;
+}
+
 h1 {
     margin-top: 0%;
-    margin-bottom: 30px;
-    margin-left: 30px;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
     padding-top: 3%;
 }
 
 h6 {
-    margin-bottom: 5px;
-    margin-left: 30px;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
 }
-@media screen and (max-width: 400px) {
-    h6 {
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
-    float: none;
-  }
-}
+
 .location,
 .temperature-section {
-    height: 30vh;
+    height: 20vh;
     width: 50%;
     margin-left: 10%;
     display: flex;
@@ -77,8 +61,8 @@ h6 {
     cursor: pointer;
 }
 .degree-section span {
-    margin: 10px;
-    font-size: 30px;
+    margin: 20%;
+    font-size: 15%;
 }
 
 .degree-section h2 {
@@ -95,30 +79,19 @@ h6 {
    }
 
    #search-city {
-       margin-top: 10px;
-       width: 100px;
-       height: 40px;
+       margin-top: 5vh;
+       width: auto;
+       height: auto;
        font-size: large;
        background-color: #FFDEAD;
    }
    #city-name {
-       /* width: 100px; */
-       height: 40px;
+       height: auto;
        font-size: large;
-       margin: auto;
-       margin-left: 30px;
-       padding: 10px;
+       margin-left: 2vw;
+       margin-right: 2vw;
        background-color: #FFDEAD;
    }
-   @media screen and (max-width: 400px) {
-    #city-name {
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 80%;
-    float: none;
-  }
-}
 
     aside {
     width: 40%;
