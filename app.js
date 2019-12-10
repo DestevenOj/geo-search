@@ -24,7 +24,7 @@ cityName.addEventListener('input', function updateValue(e) {
       console.log(city);
 
       // call for api by -- jquery ajax
-      const api = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+ appId+'&units=imperial';
+      const api = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+ appId+'&units=imperial';
       $(document).ready(function(){ 
             // $('#search-city').click(function(){
             $.get(api, function(data, status){
